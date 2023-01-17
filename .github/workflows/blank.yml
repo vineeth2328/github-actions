@@ -38,7 +38,18 @@ jobs:
         uses: actions/setup-go@v3
         with:
           go-version: 1.15   
-      - name: install
-        run: go install  github.com/onsi/ginkgo
+      - name: Go setup
+        uses: actions/setup-go@v1.0.0
+        with:
+          go-version: 1.17
+        env:
+          GOPATH: ${{ runner.workspace }}
+          GO111MODULE: "on"         
+      - name: Run test
+        env:
+          GOPATH: ${{ runner.workspace }}
+          GO111MODULE: "on"
+        run: go get -u  github.com/onsi/ginkgo      
+      
           
  
