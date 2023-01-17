@@ -20,3 +20,7 @@ jobs:
 
     - name: install dependency
       run: go get -u github.com/onsi/ginkgo
+    - name: install dependecny2
+      run: go get -u github.com/onsi/gomega/...
+    - name: install dep3
+      run: go get -u gopkg.in/yaml.v2
