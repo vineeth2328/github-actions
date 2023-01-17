@@ -19,8 +19,8 @@ jobs:
         go-version: 1.18
 
     - name: install dependency
-      run: go get -u github.com/onsi/ginkgo
+      run: go install github.com/onsi/ginkgo
     - name: install dependecny2
-      run: go get -u github.com/onsi/gomega/...
+      run: go install github.com/onsi/gomega/...
     - name: install dep3
       run: go get -u gopkg.in/yaml.v2
