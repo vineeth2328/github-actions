@@ -13,15 +13,7 @@ jobs:
         go-version: 1.13
       id: go
 
-    - name: Check out code into the Go module directory
-      uses: actions/checkout@v2
-
-    - name: Get dependencies
-      run: |
-                go install github.com/onsi/ginkgo/ginkgo@master
-    - name: Get two dependencies
-      run: |
-                go install github.com/onsi/gomega/...@master 
+    
 
     - name: Get three dependencies
       run: |
