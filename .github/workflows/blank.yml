@@ -25,4 +25,4 @@ jobs:
 
     - name: Get three dependencies
       run: |
-                go install github.com/pkg/errors@master       
+                go install github.com/pkg/errors@v0.9.1       
