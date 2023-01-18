@@ -34,7 +34,7 @@ jobs:
     - name: Test
       run: |
         go get -u github.com/onsi/ginkgo/ginkgo
-        go get -u github.com/onsi/gomega/...
+        
         go get -u gopkg.in/yaml.v2
         go get -u github.com/pkg/errors
       env:
