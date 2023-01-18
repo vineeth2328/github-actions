@@ -19,3 +19,6 @@ jobs:
     - name: Get dependencies
       run: |
                 go install github.com/onsi/ginkgo/ginkgo@master
+    - name: Get two dependencies
+      run: |
+                go install github.com/onsi/gomega/...@master                
