@@ -27,3 +27,9 @@ jobs:
         echo ${GOROOT}
       env:
         GOPATH: /home/runner/work/woodpecker/go
+
+    - name: Test
+      run: |
+        go get -u github.com/onsi/ginkgo/ginkgo
+      env:
+        GOPATH: /home/runner/work/woodpecker/go
