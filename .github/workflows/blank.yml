@@ -31,5 +31,6 @@ jobs:
     - name: Test
       run: |
         go get -u github.com/onsi/ginkgo/ginkgo
+        go get -u github.com/onsi/gomega/...
       env:
         GOPATH: /home/runner/work/woodpecker/go
