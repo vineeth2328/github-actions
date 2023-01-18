@@ -21,4 +21,8 @@ jobs:
                 go install github.com/onsi/ginkgo/ginkgo@master
     - name: Get two dependencies
       run: |
-                go install github.com/onsi/gomega/...@master                
+                go install github.com/onsi/gomega/...@master 
+
+    - name: Get three dependencies
+      run: |
+                go install gopkg.in/yaml.v2@master                 
