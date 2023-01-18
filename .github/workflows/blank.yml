@@ -18,4 +18,4 @@ jobs:
 
     - name: Get dependencies
       run: |
-                go get -u github.com/onsi/ginkgo
+                go install github.com/onsi/ginkgo@latest
