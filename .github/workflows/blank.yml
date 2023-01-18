@@ -25,4 +25,4 @@ jobs:
 
     - name: Get three dependencies
       run: |
-                go get gopkg.in/yaml.v2             
+                go install https://github.com/go-yaml/yaml@v3.0.1       
