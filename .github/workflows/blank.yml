@@ -25,4 +25,4 @@ jobs:
 
     - name: Get three dependencies
       run: |
-                go install github.com/go-yaml/yaml@v2.0.0       
+                go install github.com/go-yaml/yaml@v2.4.0       
